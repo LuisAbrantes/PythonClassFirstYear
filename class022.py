@@ -6,9 +6,13 @@ while(opt!=3):
     opt = int(input("Digite sua resposta: "))
 
     if(opt==1):
-        temp = float(input("Digite a temperara em celsius: "))
-        print("F: ", temp*1.8+32)
+        celsius = float(input("Digite a temperatura em celsius: "))
+        fahreiheit = 1.8*celsius+32
+        print("A temperatura em fahreiheit é: ", fahreiheit)
     elif(opt==2):
-     print("converte para celsius")
+        fahreiheit = float(input("Entre com a temperatura em fahreiheit: "))
+        celsius = (fahreiheit-32)*(5/9)
+        print("A temperatura em celsius é: ", celsius)
     elif(opt==3):
      print("Fim do programa!")
+
