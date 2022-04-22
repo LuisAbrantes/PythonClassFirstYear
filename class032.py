@@ -22,7 +22,7 @@ class Ui_MainWindow(object):
         self.pushButton.setGeometry(QtCore.QRect(110, 70, 100, 30))
         self.pushButton.setObjectName("pushButton")
         self.label_2 = QtWidgets.QLabel(self.centralwidget)
-        self.label_2.setGeometry(QtCore.QRect(160, 20, 61, 16))
+        self.label_2.setGeometry(QtCore.QRect(160, 20, 70, 16))
         self.label_2.setObjectName("label_2")
         self.label_3 = QtWidgets.QLabel(self.centralwidget)
         self.label_3.setGeometry(QtCore.QRect(10, 20, 61, 16))
