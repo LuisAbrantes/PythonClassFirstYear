@@ -46,19 +46,12 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "Exercício 3"))
+        MainWindow.setWindowTitle(_translate(
+            "MainWindow", "Exercício 3 - Prof. Sóstenes"))
         self.pushButton.setText(_translate("MainWindow", "Converter"))
         self.label_2.setText(_translate("MainWindow", "Fahrenheit"))
         self.label_3.setText(_translate("MainWindow", "Celsius"))
         self.label_4.setText(_translate("MainWindow", "="))
-
-    def Celsius_Line(self):
-        c = str(float(self.lineEdit.text()) * (9/5) + 32)
-        self.lineEdit_2.setText(c)
-
-    def Fahrenheit_Line(self):
-        f = str(float(self.lineEdit_2.text()) * (9/5) - 32)
-        self.lineEdit.setText(f)
 
     def Converteither(self):
         if self.lineEdit.text() == "":
