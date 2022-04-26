@@ -44,7 +44,7 @@ while not acertou:
 print()
 
 #pergunta 4
-print("Mc Kevin que canta a música 'O Menino Encantou a Quebrada'. Digite - S para sim e - N para não.")
+print("Mc Kevin que canta a música 'Joga Bola'. Digite - S para sim e - N para não.")
 acertou = False
 while not acertou:
     jogador = str(input(""))
