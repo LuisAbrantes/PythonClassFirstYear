@@ -30,7 +30,7 @@ while not acertou:
 print()
 
 # pergunta 3
-print("Zlatan Ibrahimovic tem mais de 50 gols em Champions League. Digite - S para sim e - N para não.")
+print("Zlatan Ibrahimovic tem 50 gols ou mais em Champions League. Digite - S para sim e - N para não.")
 acertou = False
 while not acertou:
     jogador = str(input(""))
