@@ -4,7 +4,7 @@ print("-"*30)
 print("Sequência de Fibonacci")
 print("-"*30)
 
-n = int(input("Quantos termos você quer saber mostrar? "))
+n = int(input("Quantos termos você quer mostrar? "))
 t1 = 0
 t2 = 1
 
