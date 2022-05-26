@@ -8,6 +8,7 @@ listaImpostos = [0.05, 0.07, 0.03, 0.10, 0.01]
 valProd = float(input("Entre com o valor: "))
 estado = input("Entre com o estado: ")
 
+imposto = 0
 contador = 0
 while(contador < 5):
     if(estado == listaEstados[contador]):
