@@ -1,9 +1,10 @@
 lista = [1, 2, 3, 4, 5]
-dobros = list()
+teste = list()
 contador = 0 
-while(contador < 4)
+while(contador < 4):
     valor = lista[contador]*2
-    dobros.append(valor)
+    teste.append(valor)
+    teste.append((contador, valor))
     contador += 1
 
-print(dobro)
+print(teste)
