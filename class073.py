@@ -28,6 +28,13 @@ while True:
     num1 = float(input("Digite um número: "))
     num2 = float(input("Digite outro número: "))
     operador = input("Digite o operador('+'; '-'; '/'; '*'): ")
+    sair = input("Deseja sair? [s]im ou [n]ão: ")
+
+    if sair == 's':
+        break
+
+    if not num1.isnumeric() or not num2.isnumeric():
+        print("Você precisa digitar um NÚMERO.")
 
     if operador == "+":
         print(f"{num1} + {num2} = {num1+num2}")
