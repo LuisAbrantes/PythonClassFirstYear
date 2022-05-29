@@ -30,12 +30,12 @@ while True:
     operador = input("Digite o operador('+'; '-'; '/'; '*'): ")
 
     if operador == "+":
-        print(f"{num1}+{num2}")
+        print(f"{num1} + {num2} = {num1+num2}")
     elif operador == "-":
-        print(f"{num1}-{num2}")
+        print(f"{num1} - {num2} = {num1-num2}")
     elif operador == "/":
-        print(f"{num1}/{num2}")
+        print(f"{num1} / {num2} = {num1/num2}")
     elif operador == "*":
-        print(f"{num1}*{num2}")
+        print(f"{num1} * {num2} = {num1*num2}")
     else:
         print("Digite um operador válido!")
