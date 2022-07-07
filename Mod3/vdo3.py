@@ -36,13 +36,13 @@ for divisivel por 5, retorne Buzz. Se o parametro for divisivel por 3 e 5, retor
 Caso contrario, retorne o numero enviado.
 '''
 def fb(n):
-    if n % 3 == 0:
-        return "Fizz"
+    if n % 3 == 0 and n%5 == 0:
+        return "FizzBuzz"
     elif n%5 == 0:
         return "Buzz"
-    elif n%3 == 0 and n%5 == 0:
-        return "FizzBuzz"
+    elif n%3 == 0:
+        return "Fizz"
     else:
         return n
 
-print(fb(15 ))    
+print(fb(15))
