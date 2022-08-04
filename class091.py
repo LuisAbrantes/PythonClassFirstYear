@@ -1,17 +1,14 @@
-#Vídeo 10 - Estudo de Tuplas.
 
-from tokenize import Double
+'''
+Faça um programa para somar duas variáveis e imprimir o valor na tela.
+'''
 
+def soma(x, y):
+    # x = 5 
+    # y = 10
+    z = x+y
 
-t1 = (1, 2, 3, 4, 5)
-t1 = list(t1)
-t1[1] = 3000
-t1 = tuple(t1)
+    print(z)
 
-t2 = (10, 20, "Andre")
-a, c, _ = t2
+soma(5, 10)
 
-print(t1)
-
-def CalculaResultante(vetorEmX : float, vetorEmY:float) -> tuple(float, float):
-    return 0.0
