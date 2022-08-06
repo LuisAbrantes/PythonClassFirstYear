@@ -9,6 +9,7 @@ lista = [
 
 d1 = dict(lista)
 print(d1)
+
 """A lista com listas e tuplas virou um dicionário. 
 A Lista "lista" pode ser uma Tupla também. Ou seja, pode ser Lista ou Tupla em qualquer lugar
 que não tem diferença ao converter a Dicionário"""
