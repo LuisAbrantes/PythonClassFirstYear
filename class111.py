@@ -14,3 +14,5 @@ def criaLista():
         listaNomes.append(nome)
         resp = int(input("Deseja dicionar mais um nome? (0 para sair) "))
     print(listaNomes)
+
+criaLista()
