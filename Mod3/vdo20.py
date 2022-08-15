@@ -2,20 +2,20 @@
 
 nome = "Luis Henrique"
 iterador = iter(nome)
-gerador = (letra for letra in nome)
+iterador = (letra for letra in nome)
 
-#GERADOR:
-print(next(gerador))
-print(next(gerador))
-print(next(gerador))
-print(next(gerador))
+#ITERADOR:
+print(next(iterador))
+print(next(iterador))
+print(next(iterador))
+print(next(iterador))
 
 print("OLHA O FOR!")
 
-for letra in gerador:
+for letra in iterador:
     print(letra)
 
-print(next(gerador))
+print(next(iterador))
 
 
 print()
