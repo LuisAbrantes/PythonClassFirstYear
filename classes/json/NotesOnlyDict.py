@@ -26,3 +26,6 @@ notes2 = {}
 #for i in range(3):
 notes2 = loadData()
 print(notes2)
+
+
+#
