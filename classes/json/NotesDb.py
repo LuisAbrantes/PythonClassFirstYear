@@ -18,6 +18,7 @@ def loadData():
     return json.loads(jsonText)
 
 def showMenu():
+    print("\n")
     print("┌─────────────────────────┐")
     print("│  BEM-VINDO AO NOTAS APP │")
     print("└─────────────────────────┘")
@@ -29,7 +30,6 @@ def showMenu():
     print("5 - Sair.")
     return int(input("Digite a opção: "))
 
-notes = []
 notes = loadData()
 
 while (True):
@@ -44,7 +44,7 @@ while (True):
     if opt == 2: # Read
         counter = 1
         for note in notes:
-            print(f"________ NOTA {counter} ________")
+            print(f"\n──────── NOTA {counter} ────────")
             print(f"{key} = {note[key]}")
             print(f"{val} = {note[val]}")
             counter += 1
