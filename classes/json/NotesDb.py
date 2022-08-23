@@ -11,7 +11,7 @@ def saveData(data):
 def loadData():
     try:  # tratamento de erro
         file = open(filename, "r")
-    except OSError:
+    except OSError: # retorna uma lista vazia se não tiver arquivo
         return []
     jsonText = file.read()
     file.close()
@@ -51,15 +51,21 @@ while (True):
 
     if opt == 3: # Update
         id = int(input("Digite o número da anotação para alterar: "))
-        note = notes[id-1]
-        note[key] = str(input("Digite o título: "))
-        note[val] = str(input("Digite o texto : "))
-        saveData(notes)
+        if id-1 >= len(notes):
+            print("\n- Nota não existente!")
+        else:
+            note = notes[id-1]
+            note[key] = str(input("Digite o título: "))
+            note[val] = str(input("Digite o texto : "))
+            saveData(notes)
 
     if opt == 4: # Delete
         id = int(input("Digite o número da anotação para alterar: "))
-        notes.pop(id-1)
-        saveData(notes)
+        if id-1 >= len(notes):
+            print("\n- Nota não existente!")
+        else:
+            notes.pop(id-1)
+            saveData(notes)
 
     if opt == 5:
         exit()
