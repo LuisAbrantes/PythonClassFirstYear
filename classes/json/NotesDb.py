@@ -19,11 +19,11 @@ def loadData():
 
 def showMenu():
     print("\n")
-    print("┌─────────────────────────┐")
-    print("│  BEM-VINDO AO NOTAS APP │")
-    print("└─────────────────────────┘")
+    print("┌───────────────────┐")
+    print("│ MENU DO NOTAS APP │")
+    print("└───────────────────┘")
     print("\n- ESCOLHA UMA DAS OPÇÕES:")
-    print("1 - Salvar nova alteração.")
+    print("1 - Salvar nova anotação.")
     print("2 - Apresentar anotações.")
     print("3 - Editar uma anotação.")
     print("4 - Apagar uma anotação.")
@@ -31,9 +31,11 @@ def showMenu():
     return int(input("Digite a opção: "))
 
 notes = loadData()
+opt = 0
 
-while (True):
+while (opt != 5):
     opt = showMenu()
+
     if opt == 1: # Create
         note = {}
         note[key] = str(input("Digite o título: "))
@@ -46,7 +48,7 @@ while (True):
         for note in notes:
             print(f"\n──────── NOTA {counter} ────────")
             print(f"{key} = {note[key]}")
-            print(f"{val} = {note[val]}")
+            print(f"{val}  = {note[val]}")
             counter += 1
 
     if opt == 3: # Update
@@ -66,6 +68,3 @@ while (True):
         else:
             notes.pop(id-1)
             saveData(notes)
-
-    if opt == 5:
-        exit()
