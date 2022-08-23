@@ -31,7 +31,6 @@ def showMenu():
 
 notes = []
 notes = loadData()
-saveData(notes)
 
 while (True):
     opt = showMenu()
