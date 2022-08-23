@@ -51,7 +51,7 @@ while (True):
 
     if opt == 3: # Update
         id = int(input("Digite o número da anotação para alterar: "))
-        if id-1 >= len(notes):
+        if id > len(notes):
             print("\n- Nota não existente!")
         else:
             note = notes[id-1]
@@ -61,7 +61,7 @@ while (True):
 
     if opt == 4: # Delete
         id = int(input("Digite o número da anotação para alterar: "))
-        if id-1 >= len(notes):
+        if id > len(notes):
             print("\n- Nota não existente!")
         else:
             notes.pop(id-1)
