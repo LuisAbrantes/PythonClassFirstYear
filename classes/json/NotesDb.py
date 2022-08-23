@@ -1,7 +1,7 @@
 import json
 filename = "NotesDb.txt"
-key = "title"
-val = "text"
+key = "Titulo"
+val = "Texto"
 
 def saveData(data):
     file = open(filename, "w") # write
@@ -18,8 +18,10 @@ def loadData():
     return json.loads(jsonText)
 
 def showMenu():
-    print("\nBEM-VINDO AO NOTAS APP.")
-    print("\nESCOLHA UMA DAS OPÇÕES:")
+    print("┌─────────────────────────┐")
+    print("│  BEM-VINDO AO NOTAS APP │")
+    print("└─────────────────────────┘")
+    print("\n- ESCOLHA UMA DAS OPÇÕES:")
     print("1 - Salvar nova alteração.")
     print("2 - Apresentar anotações.")
     print("3 - Editar uma anotação.")
@@ -41,20 +43,23 @@ while (True):
         saveData(notes)
 
     if opt == 2: # Read
+        counter = 1
         for note in notes:
+            print(f"________ NOTA {counter} ________")
             print(f"{key} = {note[key]}")
             print(f"{val} = {note[val]}")
+            counter += 1
 
     if opt == 3: # Update
         id = int(input("Digite o número da anotação para alterar: "))
-        note = notes[id]
+        note = notes[id-1]
         note[key] = str(input("Digite o título: "))
         note[val] = str(input("Digite o texto : "))
         saveData(notes)
 
     if opt == 4: # Delete
         id = int(input("Digite o número da anotação para alterar: "))
-        notes.pop(id)
+        notes.pop(id-1)
         saveData(notes)
 
     if opt == 5:
