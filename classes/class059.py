@@ -2,7 +2,7 @@
 
 #O funcionário chamado Carlos tem um colega chamado João que recebe um salário que equivale a um terço do seu salario. Carlos gosta de fazer aplicações na caderneta de poupança e vai aplicar seu salário integralmente nela, pois está rendendo 3% ao mês. João aplicará seu salário integralmente no fundo de renda fixa, que está rendendo 7% ao mês.
 
-Construa um programa que deverá calcular e mostrar a quantidade de meses necessários para que o valor pertencente a João iguale ou ultrapasse o valor pertencente a Carlos. Teste com outros valores para as taxas.
+# Construa um programa que deverá calcular e mostrar a quantidade de meses necessários para que o valor pertencente a João iguale ou ultrapasse o valor pertencente a Carlos. Teste com outros valores para as taxas.
 
 # 1/3  * Carlos = Joao
 # Carlos - Poupanca   - 3%/mes
